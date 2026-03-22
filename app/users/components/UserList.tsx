@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { CreateUserDialog } from "./components/CreateUserDialog";
+import { CreateUserDialog } from "./CreateUserDialog";
 
 type User = {
   id: number;
