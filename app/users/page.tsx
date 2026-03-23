@@ -1,17 +1,10 @@
+import { getUsers } from "@/app/users/utils";
 import { UserList } from "./components/UserList";
 
-// モックAPIからデータを取得
-async function getUsers() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users", {
-    cache: "no-store", // 常に最新を取得する (SSRとして動作)
-  });
-
-  if (!res.ok) {
-    throw new Error("Failed to fetch users");
-  }
-  return res.json();
-}
-
+/**
+ * ユーザー管理ページ
+ * @returns ユーザー管理ページ
+ */
 export default async function UsersPage() {
   const users = await getUsers();
 

@@ -10,6 +10,11 @@ type User = {
   email: string;
 };
 
+/**
+ * ユーザー一覧
+ * @param initialUsers 初期ユーザー
+ * @returns ユーザー一覧
+ */
 export function UserList({ initialUsers }: { initialUsers: User[] }) {
   const [users, setUsers] = useState<User[]>(initialUsers);
 
