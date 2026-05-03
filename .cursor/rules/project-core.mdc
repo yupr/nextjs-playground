@@ -1,0 +1,14 @@
+---
+description: Next.js + Radix + Tailwind の基本ルール
+alwaysApply: true
+---
+
+# プロジェクト基本ルール
+
+- API 境界では、意図が伝わる明示的な TypeScript 型を付ける。
+- App Router の規約を守り、インタラクションが必要な場合のみ `"use client"` を付ける。
+- UI は Radix primitives と Tailwind utilities で構築し、`shadcn` パッケージ依存は再導入しない。
+- バリアントは `cva` で整理し、クラス結合は `cn` を使う。
+- アクセシビリティを維持する（セマンティックな HTML、キーボード操作、focus-visible、適切な label/aria）。
+- 大規模な書き換えは避け、依頼範囲に絞った最小差分で変更する。
+- まとまった変更後は lint/typecheck を実行し、変更起因のエラーを解消する。
