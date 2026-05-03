@@ -63,7 +63,7 @@ export default function Home() {
             Next.js Playground
           </h1>
           <p className="max-w-2xl text-xl leading-8 text-zinc-600 dark:text-zinc-400">
-            Next.js (App Router) や shadcn/ui
+            Next.js (App Router) や Radix UI + Tailwind CSS
             などのフロントエンド技術を検証するための実験場です。Go (Gin)
             バックエンドとの連携をはじめ、様々な実装テストをここで行います。
           </p>
@@ -121,11 +121,11 @@ export default function Home() {
           </a>
           {" / "}
           <a
-            href="https://ui.shadcn.com"
+            href="https://www.radix-ui.com/primitives"
             target="_blank"
             className="font-medium text-zinc-700 dark:text-zinc-300 hover:underline"
           >
-            shadcn/ui
+            Radix UI
           </a>
           {" / "}
           <a
